@@ -1,3 +1,7 @@
+#!/bin/bash
+#set -e
+set -x
+
 FIMDP_TAG=next
 
 unzip fimdp.zip

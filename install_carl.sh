@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -x
 
 THREADS=$(nproc)
 DEP_DIR=$PWD
