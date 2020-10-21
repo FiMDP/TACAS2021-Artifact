@@ -18,7 +18,7 @@ mkdir -p $PACK_DIR
 
 # Get URIs of the needed packages
 sudo apt-get update
-apt-get install --print-uris libgmp-dev libglpk-dev libhwloc-dev z3 libboost-all-dev libeigen3-dev libginac-dev libpython3-dev automake jupyter graphviz python3-pip | grep -oP "(?<=').*(?=')" > $PACK_URIS
+apt-get install --print-uris libgmp-dev libglpk-dev libhwloc-dev z3 libboost-all-dev libeigen3-dev libginac-dev libpython3-dev automake graphviz python3-pip | grep -oP "(?<=').*(?=')" > $PACK_URIS
 
 # Download the needed packages
 cd $PACK_DIR
@@ -31,7 +31,7 @@ cd $ROOT_DIR
 # Install pip3
 sudo dpkg -i $PACK_DIR/*pip*.deb
 # Download Python packages
-pip3 download -d $PIP_DIR jupyterlab pytest pytest-runner pandas numpy matplotlib scipy ipython folium networkx
+pip3 download -d $PIP_DIR -r python-requirements
 
 ####################################
 ### Download Storm+Carl and Spot ###
@@ -56,7 +56,7 @@ wget -O $ART_DIR/evaluation.zip https://github.com/FiMDP/FiMDP-Evaluation/archiv
 
 # Copy installation scripts
 cp install_carl.sh install_storm.sh install_spot.sh $DEP_DIR
-cp install_dependencies.sh install_fimdp.sh $ART_DIR
+cp install_dependencies.sh install_fimdp.sh python-requirements $ART_DIR
 
 # Copy README.md
 cp README_artifact.md $ART_DIR/README.md
