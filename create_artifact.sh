@@ -18,7 +18,7 @@ mkdir -p $PACK_DIR
 
 # Get URIs of the needed packages
 sudo apt-get update
-apt-get install --print-uris libgmp-dev libglpk-dev libhwloc-dev z3 libboost-all-dev libeigen3-dev libginac-dev libpython3-dev automake graphviz python3-pip | grep -oP "(?<=').*(?=')" > $PACK_URIS
+apt-get install --print-uris libgmp-dev libglpk-dev libhwloc-dev z3 libboost-all-dev libeigen3-dev libginac-dev libpython3-dev automake graphviz | grep -oP "(?<=').*(?=')" > $PACK_URIS
 
 # Download the needed packages
 cd $PACK_DIR
