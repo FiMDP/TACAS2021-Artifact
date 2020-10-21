@@ -8,7 +8,6 @@ to `/home/tacas21/Desktop/artifact` and run the following to create the archive
 outside the shared folder and copy it there.
 ```bash
 sudo bash Desktop/artifact/make_local_copy.sh
-sudo chown tacas21 Desktop/artifact_local -R
-cd Desktop/artifact_local
-./create_artifact.sh && sudo cp fimdp-artifact.zip ../artifact
+cd artifact_local
+./create_artifact.sh && sudo cp fimdp-artifact.zip /home/tacas21/artifact
 ```
