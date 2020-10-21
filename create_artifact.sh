@@ -55,8 +55,8 @@ FIMDP_TAG=alpha
 wget -O $ART_DIR/evaluation.zip https://github.com/FiMDP/FiMDP-Evaluation/archive/$FIMDP_TAG.zip
 
 # Copy installation scripts
-cp install_carl.sh install_storm.sh install_spot.sh $DEP_DIR
-cp install_dependencies.sh install_fimdp.sh python-requirements $ART_DIR
+cp install_carl.sh install_storm.sh install_spot.sh python-requirements $DEP_DIR
+cp install_dependencies.sh install_fimdp.sh $ART_DIR
 
 # Copy README.md
 cp README_artifact.md $ART_DIR/README.md
