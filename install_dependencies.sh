@@ -11,5 +11,5 @@ pip3 install --no-index -f $PIP_PACK jupyterlab pytest pytest-runner
 dpkg -i apt-packages/*.deb
 ./install_carl.sh
 ./install_storm.sh
-./install_spot
+./install_spot.sh
 cd -
