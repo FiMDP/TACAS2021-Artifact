@@ -1,0 +1,12 @@
+notebook
+jupyterlab
+pytest
+pytest-runner
+pandas
+numpy
+matplotlib
+scipy
+ipython
+folium
+networkx
+seaborn
