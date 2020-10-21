@@ -29,9 +29,6 @@ cd $ROOT_DIR
 #######################################
 ### Download requested pip packages ###
 #######################################
-# Install pip3
-sudo dpkg -i $PACK_DIR/*pip*.deb
-# Download Python packages
 pip3 download -d $PIP_DIR -r python-requirements
 
 ####################################
