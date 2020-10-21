@@ -20,4 +20,8 @@ In short, run the following.
 ```sh
 sudo ./install_dependencies.sh && sudo ./install_fimdp.sh
 ```
-The scripts install all dependencies (including Storm and Spot) and then FiMDP and the related tools. The sctipts use automatically the maximum available cores (decreases time, increases peak memory consumption). We recommend allocating **8GB RAM** for the VM if possible, and several hours for you. Installing over night is not a bad idea at all.
+The scripts install all dependencies (including Storm and Spot) and then FiMDP and the related tools. The sctipts use automatically the maximum available cores (decreases time, increases peak memory consumption). We recommend allocating **8GB RAM** for the VM if possible, and a decent amount of time for you. Installing over night is not a bad idea at all.
+
+## How to use the artifact
+Evaluation
+FiMDP tutorials
