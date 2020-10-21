@@ -22,3 +22,6 @@ cd -
 cd fimdpenv
 sudo pip3 install -e .
 cd -
+
+chown -R tacas21:tacas21 fimdp fimdpenv evaluation # tutorials
+

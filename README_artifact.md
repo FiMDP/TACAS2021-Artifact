@@ -1,6 +1,23 @@
-# How to install the artefact
+# Artifact for submission 157
 
+
+This is an artifact created for our TACAS submission: 
+_František Blahoudek, Petr Novotný, Melkior Ornik, Pranay Thangeda, and Ufuk Topcu._
+**Fuel in Markov Decision Processes: A Practical Approach to Consumption.**
+
+## What is inside
+When istalled, the artifact contains:
+ * FiMDP with tutorials,
+ * FiMDPEnv,
+ * Jupyter notebooks and scripts used in Section 6: _Evaluation_ in the paper,
+ * Storm (used in the comparison),
+ * and all dependencies for both FiMDP and Storm.
+
+The artifact contains the sources and users need to install all the relevant tools. Compiling Storm (and also Spot, a dependency of FiMDP) **requires a lot of time and memory**.
+
+## How to install the artifact
+In short, run the following.
+```sh
+sudo ./install_dependencies.sh && sudo ./install_fimdp.sh
 ```
-sudo ./install_dependencies.sh
-sudo ./install_fimdp.sh
-```
+The scripts install all dependencies (including Storm and Spot) and then FiMDP and the related tools. The sctipts use automatically the maximum available cores (decreases time, increases peak memory consumption). We recommend allocating **8GB RAM** for the VM if possible, and several hours for you. Installing over night is not a bad idea at all.
