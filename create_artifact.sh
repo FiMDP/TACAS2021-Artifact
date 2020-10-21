@@ -8,6 +8,7 @@ DEP_DIR=$ART_DIR/dependencies
 PACK_DIR=$DEP_DIR/apt-packages
 PIP_DIR=$DEP_DIR/pip-packages
 FIMDP_TAG=next
+STORM_VERSION=1.6.2
 
 #############################
 ### Download apt-packages ###
@@ -39,8 +40,8 @@ pip3 download -d $PIP_DIR -r python-requirements
 wget -O $DEP_DIR/spot-2.9.4.tar.gz http://www.lrde.epita.fr/dload/spot/spot-2.9.4.tar.gz
 wget -O $DEP_DIR/carl.zip https://github.com/smtrat/carl/archive/master14.zip
 wget -O $DEP_DIR/pycarl.zip https://github.com/moves-rwth/pycarl/archive/master.zip
-wget -O $DEP_DIR/storm.zip https://github.com/moves-rwth/storm/archive/stable.zip
-wget -O $DEP_DIR/stormpy.zip https://github.com/moves-rwth/stormpy/archive/master.zip
+wget -O $DEP_DIR/storm.zip https://github.com/moves-rwth/storm/archive/$STORM_VERSION.zip
+wget -O $DEP_DIR/stormpy.zip https://github.com/moves-rwth/stormpy/archive/$STORM_VERSION.zip
 
 # Copy Storm adjustments
 cp -r storm_3rdparty_CMakeLists.txt StormEigen $DEP_DIR
