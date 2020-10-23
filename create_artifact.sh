@@ -7,7 +7,7 @@ ART_DIR=$ROOT_DIR/artifact
 DEP_DIR=$ART_DIR/dependencies
 PACK_DIR=$DEP_DIR/apt-packages
 PIP_DIR=$DEP_DIR/pip-packages
-FIMDP_TAG=next
+FIMDP_TAG=tacas2021
 STORM_VERSION=1.6.2
 
 #############################
@@ -48,9 +48,8 @@ cp -r storm_3rdparty_CMakeLists.txt StormEigen $DEP_DIR
 #################################
 wget -O $ART_DIR/fimdp.zip https://github.com/FiMDP/FiMDP/archive/$FIMDP_TAG.zip
 wget -O $ART_DIR/fimdpenv.zip https://github.com/FiMDP/FiMDPEnv/archive/$FIMDP_TAG.zip
-#wget -O $ART_DIR/tutorials.zip https://github.com/FiMDP/tutorials/archive/$FIMDP_TAG.zip
-FIMDP_TAG=alpha
-wget -O $ART_DIR/evaluation.zip https://github.com/FiMDP/FiMDP-Evaluation/archive/$FIMDP_TAG.zip
+wget -O $ART_DIR/tutorials.zip https://github.com/FiMDP/tutorials/archive/$FIMDP_TAG.zip
+wget -O $ART_DIR/evaluation.zip https://github.com/FiMDP/FiMDP-evaluation/archive/$FIMDP_TAG.zip
 wget -O $ART_DIR/doc.zip https://fimdp.readthedocs.io/_/downloads/en/latest/htmlzip/
 
 # Copy installation scripts
