@@ -9,5 +9,5 @@ outside the shared folder and copy it there.
 ```bash
 sudo bash Desktop/artifact/make_local_copy.sh
 cd artifact_local
-./create_artifact.sh && sudo cp fimdp-artifact.zip /home/tacas21/artifact
+./create_artifact.sh && sudo cp fimdp-artifact.zip /home/tacas21/Desktop/artifact
 ```
