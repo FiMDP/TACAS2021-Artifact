@@ -61,6 +61,5 @@ cp install_dependencies.sh install_fimdp.sh $ART_DIR
 cp README_artifact.md $ART_ROOT_DIR/README.md
 cp LICENSE $ART_ROOT_DIR
 
-cd $ART_ROOT_DIR 
-zip fimdp-artifact.zip artifact/* -r
-cd $ROOT_DIR
+cd $ROOT_DIR 
+zip fimdp-artifact.zip fimdp/* -r
