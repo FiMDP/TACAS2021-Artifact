@@ -6,7 +6,7 @@ _František Blahoudek, Petr Novotný, Melkior Ornik, Pranay Thangeda, and Ufuk T
 **Fuel in Markov Decision Processes: A Practical Approach to Consumption.**
 
 ## What is inside
-When istalled, the artifact contains:
+When installed, the artifact contains:
  * FiMDP with tutorials, and documentation
  * FiMDPEnv,
  * Jupyter notebooks and scripts used in Section 6: _Evaluation_ in the paper,
