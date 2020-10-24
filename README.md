@@ -46,7 +46,7 @@ Then, in the local copy, run the following. The `cp` command copies the .zip
 file with the artifact back into the shared folder.
 
 ```sh
-./create_artifact.sh && sudo cp fimdp-artifact.zip /home/tacas21/Desktop/artifact
+./create_artifact.sh && sudo cp fimdp/fimdp-artifact.zip /home/tacas21/Desktop/artifact
 ```
 
 ## Testing and using the artifact
