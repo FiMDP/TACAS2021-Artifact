@@ -50,7 +50,7 @@ wget -O $ART_DIR/fimdp.zip https://github.com/FiMDP/FiMDP/archive/$FIMDP_TAG.zip
 wget -O $ART_DIR/fimdpenv.zip https://github.com/FiMDP/FiMDPEnv/archive/$FIMDP_TAG.zip
 wget -O $ART_DIR/tutorials.zip https://github.com/FiMDP/tutorials/archive/$FIMDP_TAG.zip
 wget -O $ART_DIR/evaluation.zip https://github.com/FiMDP/FiMDP-evaluation/archive/$FIMDP_TAG.zip
-wget -O $ART_DIR/doc.zip https://fimdp.readthedocs.io/_/downloads/en/latest/htmlzip/
+wget -O $ART_DIR/doc.zip https://fimdp.readthedocs.io/_/downloads/en/$FIMDP_TAG/htmlzip/
 
 # Copy installation scripts
 cp install_carl.sh install_storm.sh install_spot.sh python-requirements $DEP_DIR

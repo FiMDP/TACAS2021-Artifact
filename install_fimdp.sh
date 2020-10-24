@@ -14,7 +14,7 @@ mv FiMDP-$FIMDP_TAG fimdp
 mv FiMDPEnv-$FIMDP_TAG fimdpenv
 mv tutorials-$FIMDP_TAG tutorials
 mv FiMDP-Evaluation-$FIMDP_TAG evaluation
-mv fimdp-latest fimdp-documentation
+mv fimdp-$FIMDP_TAG fimdp-documentation
 
 cd fimdp
 sudo pip3 install -e .
