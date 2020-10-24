@@ -62,4 +62,5 @@ cp README_artifact.md $ART_ROOT_DIR/README.md
 cp LICENSE $ART_ROOT_DIR
 
 cd $ART_ROOT_DIR 
-zip fimdp-artifact.zip fimdp/* -r 
+zip fimdp-artifact.zip artifact/* -r
+cd $ROOT_DIR
