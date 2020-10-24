@@ -3,7 +3,8 @@
 set -x
 
 ROOT_DIR=$PWD
-ART_DIR=$ROOT_DIR/artifact
+ART_ROOT_DIR=$ROOT_DIR/fimdp # The .zip file should have a readme next to the actual artifact
+ART_DIR=$ART_ROOT_DIR/artifact
 DEP_DIR=$ART_DIR/dependencies
 PACK_DIR=$DEP_DIR/apt-packages
 PIP_DIR=$DEP_DIR/pip-packages
@@ -57,7 +58,8 @@ cp install_carl.sh install_storm.sh install_spot.sh python-requirements $DEP_DIR
 cp install_dependencies.sh install_fimdp.sh $ART_DIR
 
 # Copy README.md
-cp README_artifact.md $ART_DIR/README.md
+cp README_artifact.md $ART_ROOT_DIR/README.md
+cp LICENSE $ART_ROOT_DIR
 
-cd $ROOT_DIR 
+cd $ART_ROOT_DIR 
 zip fimdp-artifact.zip artifact/* -r
