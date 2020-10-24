@@ -13,7 +13,7 @@ unzip doc.zip
 mv FiMDP-$FIMDP_TAG fimdp
 mv FiMDPEnv-$FIMDP_TAG fimdpenv
 mv tutorials-$FIMDP_TAG tutorials
-mv FiMDP-Evaluation-$FIMDP_TAG evaluation
+mv FiMDP-evaluation-$FIMDP_TAG evaluation
 mv fimdp-$FIMDP_TAG fimdp-documentation
 
 cd fimdp
